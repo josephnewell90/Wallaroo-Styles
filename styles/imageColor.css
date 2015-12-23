@@ -1,0 +1,21 @@
+.imageColor figure {
+    display: inline-block;
+    width: 45%;
+}
+
+.imageColor figure.black {
+  background-color: black;
+}
+
+.imageColor figure.blue {
+  background-color: blue;
+}
+
+.imageColor img {
+  opacity: .5;
+  display: block; /*This is super important. If this is missing, the image will have a bar of extra color without any opacity effects on it below the image */
+}
+
+.imageColor figure:hover img {
+  opacity: 1;
+}

@@ -1,0 +1,40 @@
+/* Put text on top of the images */
+.imageGrid {
+  position: relative;
+}
+
+.imageGrid figure {
+    max-width: 30em;
+    margin: 0 auto;
+    position: relative;
+}
+.imageGrid figcaption {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 25%;
+}
+
+ /*
+ * INLINE-BLOCK VERSION
+ * This version is kind of finicky and I don't like it as much as flex, but it is much more universal for browsers
+ */
+
+ /*.imageGrid figure {
+   display: inline-block;
+   width: 33%;
+ }*/
+
+ /*
+ * FLEX VERSION
+ * I prefer flex as it is a little more air-tight, the browser takes care of more, and is much more flexible. However, it isn't as widely accepted (iOS 8 requires a vendor prefix, etc.)
+ */
+
+ .imageGrid {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }

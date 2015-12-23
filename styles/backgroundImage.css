@@ -1,0 +1,19 @@
+/* This is our default way that is universally accepted by browsers */
+.backgroundImage {
+    background-image: url('http://placehold.it/500x300');
+    height: 22em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+}
+
+.backgroundImage h3 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 25%;
+}

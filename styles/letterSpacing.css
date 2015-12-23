@@ -1,0 +1,7 @@
+.letterSpacing h4 {
+  letter-spacing: .25em;
+}
+
+.letterSpacing p {
+  letter-spacing: .15em;
+}

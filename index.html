@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wallaroo Styles</title>
+    <!-- This general css file is for basic stuff like containing images and such -->
+    <link rel="stylesheet" type="text/css" href="styles/general.css" />
+
+    <link rel="stylesheet" type="text/css" href="styles/figureText.css" />
+    <link rel="stylesheet" type="text/css" href="styles/backgroundImage.css" />
+    <link rel="stylesheet" type="text/css" href="styles/letterSpacing.css" />
+    <link rel="stylesheet" type="text/css" href="styles/imageGrid.css" />
+    <link rel="stylesheet" type="text/css" href="styles/imageColor.css" />
+    <link rel="stylesheet" type="text/css" href="styles/imageGridColor.css" />
+    <link rel="stylesheet" type="text/css" href="styles/imageGridColorLines.css" />
+    <link rel="stylesheet" type="text/css" href="styles/textLines.css" />
+
+  </head>
+  <body>
+    <main>
+      <div class="banner">
+        <figure>
+          <img src="logo.png" />
+        </figure>
+        <h1>Commonly Used Styles</h1>
+      </div>
+
+      <h1>ATOMS</h1>
+      <div class="letterSpacing">
+        <h2>Letter Spacing:</h2>
+        <h3>.25em</h3>
+        <h4>This is a sample letter spacing for headers</h4>
+        <h3>.15em</h3>
+        <p>This is a sample letter spacing for body text</p>
+      </div>
+
+      <div class="imageColor">
+        <h2>Image with a background Color:</h2>
+        <figure class="black">
+          <img src="http://placehold.it/500x300" />
+        </figure>
+        <figure class="blue">
+          <img src="http://placehold.it/500x300" />
+        </figure>
+      </div>
+
+      <div class="textLines">
+        <h2>Text on an image with top and bottom hr tags:</h2>
+        <h3>
+          <hr />
+          Using hr tags
+          <hr />
+        </h3>
+
+        <span><h3 class="border">Using border CSS properties</h3></span>
+      </div>
+
+      <h1>MOLECULES</h1>
+      <h2>Absolutely center text on top of an actual image:</h2>
+      <div class="figureText">
+        <figure>
+          <img src="http://placehold.it/500x300" />
+          <figcaption><h3>Text absolutely centered on top of an actual image</h3></figcaption>
+        </figure>
+      </div>
+      <h2>Absolutely center text on top of a background image:</h2>
+      <div class="backgroundImage">
+        <h3>Text absolutely centered on top of a background image</h3>
+      </div>
+
+      <h2>Grid of images with text on top</h2>
+      <div class="imageGrid">
+        <figure>
+          <img src="http://placehold.it/300x300">
+          <figcaption><h3>Product Name</h3></figcaption>
+        </figure>
+        <figure>
+          <img src="http://placehold.it/300x300">
+          <figcaption><h3>Product Name</h3></figcaption>
+        </figure>
+        <figure>
+          <img src="http://placehold.it/300x300">
+          <figcaption><h3>Product Name</h3></figcaption>
+        </figure>
+      </div>
+
+      <h2>Grid of images with text on top and background shading</h2>
+      <div class="imageGridColor">
+        <figure class="black">
+          <img src="http://placehold.it/300x300">
+          <figcaption><h3>Product Name</h3></figcaption>
+        </figure>
+        <figure class="blue">
+          <img src="http://placehold.it/300x300">
+          <figcaption><h3>Product Name</h3></figcaption>
+        </figure>
+        <figure class="green">
+          <img src="http://placehold.it/300x300">
+          <figcaption><h3>Product Name</h3></figcaption>
+        </figure>
+      </div>
+
+      <h2>Grid of images w/ background shading, hover transitions, and text with borders</h2>
+      <div class="imageGridColorLines">
+        <figure class="black">
+          <img src="http://placehold.it/300x300" />
+          <figcaption>
+            <hr />
+            <h3>Product Name</h3>
+            <hr />
+          </figcaption>
+        </figure>
+        <figure class="blue">
+          <img src="http://placehold.it/300x300" />
+          <figcaption>
+            <h3 class="border">Product Name</h3>
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>

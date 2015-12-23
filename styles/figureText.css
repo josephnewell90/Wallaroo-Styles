@@ -1,0 +1,18 @@
+/* This is our default way that is universally accepted by browsers */
+.figureText {
+  position: relative;
+}
+
+.figureText figure {
+    max-width: 30em;
+    margin: 0 auto;
+}
+.figureText figcaption {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 25%;
+}

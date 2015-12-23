@@ -1,0 +1,84 @@
+/* Grid with colors */
+.imageGridColorLines figure {
+    display: inline-block;
+}
+
+.imageGridColorLines figure.black {
+  background-color: black;
+}
+
+.imageGridColorLines figure.blue {
+  background-color: blue;
+}
+
+.imageGridColorLines figure.green {
+  background-color: green;
+}
+
+.imageGridColorLines img {
+  opacity: .5;
+  display: block; /*This is super important. If this is missing, the image will have a bar of extra color without any opacity effects on it below the image */
+}
+
+.imageGridColorLines figure:hover img {
+  opacity: 1;
+}
+
+/* Put text on top of the images */
+.imageGridColorLines {
+  position: relative;
+}
+
+.imageGridColorLines figure {
+    max-width: 30em;
+    margin: 0 auto;
+    position: relative;
+}
+.imageGridColorLines figcaption {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 25%;
+}
+
+ /*
+ * INLINE-BLOCK VERSION
+ * This version is kind of finicky and I don't like it as much as flex, but it is much more universal for browsers
+ */
+
+ /*.imageGridColorLines figure {
+   display: inline-block;
+   width: 33%;
+ }*/
+
+ /*
+ * FLEX VERSION
+ * I prefer flex as it is a little more air-tight, the browser takes care of more, and is much more flexible. However, it isn't as widely accepted (iOS 8 requires a vendor prefix, etc.)
+ */
+
+ .imageGridColorLines {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+/* Text borders of different kinds */
+.imageGridColorLines h3 {
+  text-align: center;
+}
+.imageGridColorLines hr {
+  border: 0;
+  border-top: 1px solid white;
+  width: 30%;
+}
+
+.imageGridColorLines h3.border {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: .5em 0;
+  display: inline-block;
+}
