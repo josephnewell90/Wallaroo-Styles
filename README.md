@@ -14,7 +14,7 @@ Typically Wallaroo uses two different letter spacings. This will vary on a case 
 
 ###Image with a background shade
 This is done by putting a background color on the figure and making the image slightly transparent. On hover of the figure, we make the image completely opaque.
-NOTE: There is a display: block on the image. This is crucial because without it the div will expand past the transparent image, causing a strip of solid color on the bottom
+NOTE: There is a display: block on the image. This is crucial because without it the figure will expand past the transparent image, causing a strip of solid color on the bottom
 
 ###Text with borders
 There are two different ways we can go about this to solve two different problems
