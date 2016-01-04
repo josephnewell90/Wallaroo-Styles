@@ -20,7 +20,7 @@ NOTE: There is a display: block on the image. This is crucial because without it
 There are two different ways we can go about this to solve two different problems
 
 + If the line does not need to be the same length of the text
-++ We will put '''<hr />''' elements before and after the text then size it appropriately
+++ We will put hr elements before and after the text then size it appropriately
 + If the line needs to be the same length as the text
 ++ Use the border CSS properties. This requires a wrapper with display: block so that we can center it if that's needed. display: inline-block; is placed on the h3 so that the width of the borders confines to the width of the text.
 
